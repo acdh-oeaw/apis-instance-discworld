@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -150,8 +149,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 DJANGO_TABLES2_TEMPLATE = "django_tables2/bootstrap4.html"
 
-ALLOWED_CIDR_NETS = ["10.0.0.0/8", "127.0.0.0/8"]
-ALLOWED_HOSTS = ["discworld.acdh-ch-dev.oeaw.ac.at", "localhost"]
-DATABASES = {"default": dj_database_url.config(conn_max_age=600)}
 STATIC_ROOT = '/tmp/staticfiles'
-
