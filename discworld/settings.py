@@ -13,103 +13,15 @@ from apis_acdhch_default_settings.settings import *
 
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-2o=u-b51(vfs@0*o4!)blar1u9s7d+2ci&e3kwjabyrgwv=jxt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
-# Application definition
-
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    # `apis_override_select2js` is a workaround for APIS' handling of autocomplete
-    # forms. It should be listed at the beginning of the list, to make sure the
-    # files shipped with it are served in precedence.
-    "apis_override_select2js",
-    # ui stuff used by APIS
-    "crispy_forms",
-    "django_filters",
-    "django_tables2",
-    "dal",
-    "dal_select2",
-    "rest_framework",
-    "rest_framework.authtoken",
-    # for swagger ui generation
-    "drf_spectacular",
-    # Your ontology
-    "apis_ontology",
-    # The APIS apps
-    "apis_core.core",
-    "apis_core.apis_entities",
-    "apis_core.apis_metainfo",
-    "apis_core.apis_relations",
-    "apis_core.apis_vocabularies",
-    "apis_core.apis_labels",
-]
-
-MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allow_cidr.middleware.AllowCIDRMiddleware',
-]
-
 ROOT_URLCONF = 'discworld.urls'
 
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-]
-
 WSGI_APPLICATION = 'discworld.wsgi.application'
-
-
-# Password validation
-# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
-
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
-]
 
 
 # Internationalization
@@ -117,24 +29,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_TZ = True
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.2/howto/static-files/
-
-STATIC_URL = 'static/'
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
-DJANGO_TABLES2_TEMPLATE = "django_tables2/bootstrap4.html"
-
-STATIC_ROOT = '/tmp/staticfiles'
