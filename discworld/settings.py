@@ -11,11 +11,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 from apis_acdhch_default_settings.settings import *
 
-from pathlib import Path
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-2o=u-b51(vfs@0*o4!)blar1u9s7d+2ci&e3kwjabyrgwv=jxt'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -33,5 +28,3 @@ LANGUAGE_CODE = 'en-us'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-CRISPY_TEMPLATE_PACK = "bootstrap4"
