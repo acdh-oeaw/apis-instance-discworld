@@ -8,8 +8,8 @@ packages = [{include = "apis_ontology"}, {include = "discworld"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-apis-core = {git = "https://github.com/acdh-oeaw/apis-core-rdf", rev = "v0.10.0"}
-apis-acdhch-default-settings = "^0.1.22"
+apis-core = {git = "https://github.com/acdh-oeaw/apis-core-rdf", rev = "v0.11.1"}
+apis-acdhch-default-settings = "0.1.24"
 psycopg2 = "^2.9.9"
 
 
