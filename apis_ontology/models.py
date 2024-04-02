@@ -6,10 +6,19 @@ class Character(AbstractEntity):
     first_name = models.CharField(max_length=255, blank=True)
     last_name = models.CharField(max_length=255, blank=True)
 
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
+
 
 class Place(AbstractEntity):
-    name2 = models.CharField(max_length=255, blank=True)
+    name = models.CharField(max_length=255, blank=True)
+
+    def __str__(self):
+        return self.name
 
 
 class Book(AbstractEntity):
     title = models.CharField(max_length=255, blank=True)
+
+    def __str__(self):
+        return self.title
