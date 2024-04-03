@@ -347,7 +347,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 1,
   "fields": {
-    "name": "Rincewind the Wizard",
     "self_contenttype": [
       "apis_ontology",
       "character"
@@ -358,7 +357,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 2,
   "fields": {
-    "name": "The Colour of Magic",
     "self_contenttype": [
       "apis_ontology",
       "book"
@@ -369,7 +367,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 3,
   "fields": {
-    "name": "The Light Fantastic",
     "self_contenttype": [
       "apis_ontology",
       "book"
@@ -380,7 +377,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 4,
   "fields": {
-    "name": "Equal Rites",
     "self_contenttype": [
       "apis_ontology",
       "book"
@@ -391,7 +387,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 5,
   "fields": {
-    "name": "Mort",
     "self_contenttype": [
       "apis_ontology",
       "book"
@@ -402,7 +397,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 6,
   "fields": {
-    "name": "Sourcery",
     "self_contenttype": [
       "apis_ontology",
       "book"
@@ -413,7 +407,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 7,
   "fields": {
-    "name": "Wyrd Sisters",
     "self_contenttype": [
       "apis_ontology",
       "book"
@@ -424,7 +417,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 8,
   "fields": {
-    "name": "Pyramids",
     "self_contenttype": [
       "apis_ontology",
       "book"
@@ -435,7 +427,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 9,
   "fields": {
-    "name": "Guards! Guards!",
     "self_contenttype": [
       "apis_ontology",
       "book"
@@ -446,7 +437,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 10,
   "fields": {
-    "name": "Faust Eric",
     "self_contenttype": [
       "apis_ontology",
       "book"
@@ -457,7 +447,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 11,
   "fields": {
-    "name": "Moving Pictures",
     "self_contenttype": [
       "apis_ontology",
       "book"
@@ -468,7 +457,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 12,
   "fields": {
-    "name": "mentioned in",
     "self_contenttype": [
       "apis_relations",
       "property"
@@ -479,7 +467,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 13,
   "fields": {
-    "name": "The Luggage",
     "self_contenttype": [
       "apis_ontology",
       "character"
@@ -490,7 +477,6 @@
   "model": "apis_metainfo.rootobject",
   "pk": 14,
   "fields": {
-    "name": "related to",
     "self_contenttype": [
       "apis_relations",
       "property"
