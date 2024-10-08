@@ -1,23 +1,6 @@
 Discworld APIS example instance
 ===============================
 
-
-Initialize your database
-```
-poetry run ./manage.py migrate
-```
-
-Load data from fixtures
-```
-poetry run ./manage.py loaddata data/dump.json
-```
-
-Create user
-```
-poetry run ./manage.py createsuperuser
-```
-
-Run server
-```
-poetry run ./manage.py runserver
-```
+The functionality of this repository has been integrated into the
+[apis-core-rdf repository](https://github.com/acdh-oeaw/apis-core-rdf/).
+This repository has been archived in 2024/10
